@@ -1,25 +1,23 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Title:</b>
+  <strong>Title:</strong>
   <%= @card.title %>
 </p>
 
 <p>
-  <b>Description:</b>
-  <%= @card.description %>
-</p>
-
-<p>
-  <b>Status:</b>
+  <strong>Status:</strong>
   <%= @card.status %>
 </p>
 
 <p>
-  <b>Board:</b>
+  <strong>Description:</strong>
+  <%= @card.description %>
+</p>
+<p>
+  <strong>Board:</strong>
   <%= @card.board_id %>
 </p>
-
 
 <%= link_to 'Edit', edit_card_path(@card) %> |
 <%= link_to 'Back', cards_path %>

@@ -1,10 +1,24 @@
-kanban board
-==============
+# README
 
-a ruby on rails sample app
-to learn about controllers and views.
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-look at public/index.html or start the
-rails server and look at the homepage
-to find out what to do.
+Things you may want to cover:
 
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...

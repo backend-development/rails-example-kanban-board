@@ -1,8 +1,7 @@
-class Card < ActiveRecord::Base
-  attr_accessible :board_id, :description, :status, :title
+class Card < ApplicationRecord
   belongs_to :board
 
-  validates_presence_of  :board_id
-  validates_length_of    :title, :minimum => 3
-  validates_inclusion_of :status, :in => %w(backlog todo working_on done)
+  #validates  :board_id, presence: true
+  #validates  :title,    length: { minimum: 3 }
+  #validates  :status,   inclusion: { in: %w(backlog todo working_on done) }
 end

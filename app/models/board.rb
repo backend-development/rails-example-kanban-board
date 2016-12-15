@@ -1,6 +1,5 @@
-class Board < ActiveRecord::Base
-  attr_accessible :title
-  has_many :cards, :dependent => :destroy
+class Board < ApplicationRecord
+  has_many :cards, dependent: :destroy
 
-  validates_length_of :title, :minimum => 3
+  # validates :title, length: { minimum: 3 }
 end

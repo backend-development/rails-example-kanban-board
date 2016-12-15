@@ -1,29 +1,31 @@
-<h1>Listing cards</h1>
+<p id="notice"><%= notice %></p>
+
+<h1>Cards</h1>
 
 <table>
-  <tr>
-    <th>Title</th>
-    <th>Description</th>
-    <th>Status</th>
-    <th>Board</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Status</th>
+      <th>Board</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
 
-<% @cards.each do |card| %>
-  <tr>
-    <td><%= card.title %></td>
-    <td><%= card.description %></td>
-    <td><%= card.status %></td>
-    <td><%= card.board_id %></td>
-    <td><%= link_to 'Show', card %></td>
-    <td><%= link_to 'Edit', edit_card_path(card) %></td>
-    <td><%= link_to 'Destroy', card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
+  <tbody>
+    <% @cards.each do |card| %>
+      <tr>
+        <td><%= card.title %></td>
+        <td><%= card.status %></td>
+        <td><%= card.board_id %></td>
+        <td><%= link_to 'Show', card %></td>
+        <td><%= link_to 'Edit', edit_card_path(card) %></td>
+        <td><%= link_to 'Destroy', card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
 </table>
 
-<br />
+<br>
 
 <%= link_to 'New Card', new_card_path %>
