@@ -49,7 +49,7 @@ the `board_id` is already specified by the url.
 
 === Display the Kanban Board ===
 
-Research what a kanban board shold look like.
+Research what a kanban board should look like.
 Change the show-view of board to look like this.
 
 
