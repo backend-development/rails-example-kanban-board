@@ -1,7 +1,7 @@
 class Card < ApplicationRecord
   belongs_to :board
 
-  @@valid_status = %w(backlog todo working_on done) 
+  @@valid_status = %w(backlog todo working_on done)
 
   validates  :board_id, presence: true
   validates  :title,    length: { minimum: 3 }

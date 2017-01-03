@@ -1,0 +1,27 @@
+LineLength:
+  Max: 120
+
+MethodLength:
+  Max: 15
+
+Documentation:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  EnforcedStyle: compact
+
+Style/ClassVars:
+  Enabled: false
+
+AllCops:
+  Excludes:
+    - 'config/environments/**'
+    - 'config/**'
+    - 'db/**'
+    - 'bin/**'
+    - '**/*.jbuilder'
+    - 'app/channels/application_cable/channel.rb'
+    - 'app/channels/application_cable/connection.rb'
+
+Rails:
+  Enabled: true
