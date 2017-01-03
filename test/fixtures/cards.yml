@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  status: MyString
-  references: 
+  title: Do some thing one
+  status: backlog
+  board: one
 
 two:
-  title: MyString
-  status: MyString
-  references: 
+  title: Do something two
+  status: backlog
+  board: two
