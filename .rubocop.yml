@@ -4,6 +4,9 @@ LineLength:
 MethodLength:
   Max: 15
 
+AbcSize:
+  Max: 20
+
 Documentation:
   Enabled: false
 
