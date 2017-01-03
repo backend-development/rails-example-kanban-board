@@ -17,7 +17,7 @@ Style/ClassVars:
   Enabled: false
 
 AllCops:
-  Excludes:
+  Exclude:
     - 'config/environments/**'
     - 'config/**'
     - 'db/**'
