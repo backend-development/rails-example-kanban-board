@@ -9,7 +9,7 @@ This Application already has two models: boards and cards.
 Create the database and load the seed data by running
 `rails db:setup`
 
-## Replace the Homepage === 
+## Replace the Homepage
 
 Redirect home to the list of kanban boards.
 
@@ -21,7 +21,7 @@ cards deleted? Does Rails use referential integrity in the
 database?
 
 
-## Nested Ressources === 
+## Nested Ressources
 
 Study the URLs, controllers and actions by running `rails 
 routes`. Now change `config/routes.rb` to 
